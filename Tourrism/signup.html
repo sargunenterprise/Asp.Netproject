@@ -44,36 +44,50 @@
         </div>
     </nav>
     <!--************************************** navbar ends *****************************************-->
-    <div class="head">
-        <div class="text">
-            <span class="wel">SIGN UP</span>
-                <form>
-                    <div>
-                        <label class="logintext">E-MAIL</label>
-                         <input type="" name="ename" class="inputtext">
-                    </div>
-                    <div>
-                        <label class="logintext">Password</label>
-                        <input type="" name="Password" class="inputtext">
-                    </div>
-                     <div>
-                        <label class="logintext">E-MAIL</label>
-                         <input type="" name="ename" class="inputtext">
-                    </div>
-                    <div>
-                        <label class="logintext">Password</label>
-                        <input type="" name="Password" class="inputtext">
-                    </div>
-            
-            <input type="submit" class="submitbtn"  name="login">
-            </form>
-             <div class="createtext">                   
-              <span>Already Have An Account. <a href="login.html" style="text-decoration:none;">Login</a></span>
-             </div>
-         </div>
-            <div class="imgContainer" >       
-            </div>
+   <!--************************************** login form *****************************************-->
+
+   <section class="container card mt-5 p-3 m-auto">
+    <div class="container">
+        <h3 class="card-title txtColor fs-3 fw-semibold rounded-2 bgNavy mt-5 text-left p-2 w-100">Sign&nbsp;<span class="text-success">Up</span> </h3>
+        <hr class="Dashline m-auto " />
     </div>
+    <div class="container m-3">
+        <form class="m-5">
+            <div class="form-group col-md-6">
+                <label for="Mobile">Name</label>
+                <input ID="txtMobile" runat="server" ValidationGroup="grpLogin" TextMode="name"
+                    Class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="Mobile">Mobile</label>
+                <input ID="txtMobile" runat="server" ValidationGroup="grpLogin" TextMode="Phone"
+                    Class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="Mobile">User Name</label>
+                <input ID="txtMobile" runat="server" ValidationGroup="grpLogin" TextMode="Phone"
+                    Class="form-control">
+            </div>
+            <div class="form-group  col-md-6">
+                <label for="inputAddress2">Password</label>
+                <input ID="txtUserPass" runat="server" ValidationGroup="grpLogin" TextMode="Password"
+                    Class="form-control">
+                
+            </div>
+         
+
+            <div class=" d-flex">
+                <Button ID="btnSubmit" runat="server" Text="Submit" ValidationGroup="grpLogin"
+                Class="btn bg-success text-white fw-bold mt-3" OnClick="btnSubmit_Click" >Submit</Button><br>
+            </div>
+            <div class="mt-2">
+              Already Have An Account&nbsp;<a href="login.html" class="text-success ">Sign In</a>
+            </div>
+        </form>
+
+    </div>
+
+</section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
