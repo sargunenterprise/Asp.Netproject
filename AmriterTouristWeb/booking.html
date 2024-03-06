@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <!-- Add your CSS styles or link to a stylesheet here -->
+    <style>
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin-top: 20px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            order: 2;
+            width: 100%;
+            height: 80px;
+            box-sizing: border-box;
+            padding: 10px;
+            background-image: url('https://images.pexels.com/photos/386148/pexels-photo-386148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: rgb(63, 10, 10);
+            text-shadow: #0e0303;
+            text-align: center;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .mb-3 {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #67bb5c;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #22380d;
+        }
+
+        footer {
+            background-color: #63758a;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="index.html">Home</a>
+    </nav>
+    <h2>Book Hotel</h2>
+    <form>
+        <div class="mb-3">
+            <label for="hotel" class="form-label">Hotel</label><br>
+            <select class="form-select" id="hotel">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="checkInDate" class="form-label">Check-In Date</label><br>
+            <input type="date" class="form-control" id="checkInDate">
+        </div>
+        <div class="mb-3">
+            <label for="checkOutDate" class="form-label">Check-Out Date</label><br>
+            <input type="date" class="form-control" id="checkOutDate">
+        </div>
+        <div class="mb-3">
+            <label for="roomType" class="form-label">Room Type</label><br>
+            <select class="form-select" id="roomType">
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="suite">Suite</option>
+            </select>
+        </div>
+
+        <button type="submit">Book</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Tourism Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
