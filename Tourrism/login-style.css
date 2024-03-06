@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ *{			
+ 			font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        #main{
+        	position: sticky;
+        	top: 0;
+        	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .navbar {
+
+            overflow: hidden;
+        }
+
+      .navbar{
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				padding: 10px 10px;
+				max-height: 300px;
+				width: 100%;
+				position: sticky;
+				
+			}
+			.logo{
+				width: 120px;
+
+			}
+			.heading{
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				font-size:12px;
+			}
+			  .links{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				max-width: 100vw;
+				background-color: #e82b05;
+			}
+			.links ul{
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+				
+
+			}
+			.links ul li{
+			 list-style: none;
+			 padding: 0 10px;
+
+
+			}
+			.links ul li a {
+				text-decoration: none;
+				 color: white;
+				 text-align: center;
+				 font-size: 16px;
+
+			}
+			
+.slider{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	min-height:45vh;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+.slides{
+	display: flex;
+	transition: all 0.7s;
+
+}
+.slide{
+	display: absolute;
+	flex: 0 0 100%;
+	height: 50vh;
+	object-fit: cover;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	background-position: center;
+
+}
+
+.slides.active{
+	display: flex;
+}
+
+.slider-control{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+}
+.slide.active{
+	transform: translateX(0);
+}
+.prev-slider,.next-slider{
+	z-index: 2;
+	margin: 0 10px;
+}
+.prev-slider{
+	position: absolute;
+	left: 10px;
+}
+.next-slider{
+	position: absolute;
+	right: 10px;
+}
+.manual{ 
+	    width: 100%;
+	    height: 70px;
+	    position: absolute;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    bottom: 0px;
+	    z-index: 5;
+}
+.controlUL{
+	position: absolute;
+	display: flex;
+	background-color: dimgray;
+	border-radius: 10px;
+	z-index: 5;
+	
+}
+.controlUL span{
+	list-style: none;
+    background-color: lightgray;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    font-size: 50px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;  
+
+}
+.head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100vw;
+	min-height:45vh;
+	margin: 20px 20px 14px 20px;
+	padding:6px 60px 1px 60px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 20px;
+
+	
+}
+.text{
+	width: 50%;
+/*	background-color: red;*/
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.wel{
+	color: #12396d;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.text .headtext{
+	font-size: 30px;
+	font-weight: bolder;
+	color: #AC1D16;
+}
+.text .subtext{
+	font-size: 21px;
+	color: #AC1D16;	
+}
+.text .paratext{
+		font-size: 14px;	
+		font-weight: lighter;	
+		color:#565252 ;
+	}
+.imgContainer{
+	background: url(https://img.freepik.com/free-vector/focused-tiny-people-reading-books_74855-5836.jpg?w=740&t=st=1702301136~exp=1702301736~hmac=0f41541977234c07c6fae2dbf4b59fb87d0a60889bcd394073438640a7167180);
+	object-fit: cover;	
+	width: 50%;
+	background-size: 100% 100%;
+	min-height: 70vh;
+	background-position: center;	
+}
+.event_main{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: space-between;
+	background-image:url(https://ptudocs.com/images/inner_header.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	align-items: center;
+	max-width: 100%;
+	min-height:75vh;
+}
+.event{
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 90vw;
+	height: 23rem;
+	z-index: 5;
+	margin: auto;
+	overflow: hidden;
+}
+.event_contanier{
+	margin: 0px 30px;
+	flex-direction: column;
+	width: 300px;
+	height: 20rem;
+	text-align: center;
+	border-radius: 10px;
+}
+.event_img{
+	border-radius: 10px;
+	top: 0;
+	width: 300px;
+	height: 16rem;	
+}
+.eventText{
+	border-radius: 10px;
+	background-color: #ffb235;
+	color: white;
+	 letter-spacing: 3px;
+	font-weight: 100;
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	text-align: center;
+}
+.event :hover{
+	scale: 1.1;
+	transition: all .4s;
+}
+.event_controls{
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+	height: 20rem;
+	transform: translateY(50%);
+}
+.profContainer{
+	margin: 20px;
+	border-radius: 50%;
+	background: url(https://img.freepik.com/free-photo/portrait-young-male-professor-education-day_23-2150980045.jpg?size=626&ext=jpg&ga=GA1.1.1211299272.1702454418&semt=sph);
+	object-fit: cover;	
+	width: 36%;
+	background-size: 100% 100%;
+	height: 60vh;
+	background-position: center;
+}
+.department_main{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	align-items: center;
+	min-width: 100%;
+	min-height:40vh;
+}
+.department{
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 90%;
+	height: 15rem;
+	z-index: 5;
+	margin: auto;
+	overflow: hidden;
+	text-decoration: none;
+}
+.departmentContainer{
+	margin: 0px 20px;
+	flex-direction: column;
+	width: 200px;
+	height: 12rem;
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: none;
+}
+.deptImg{
+	background-color: #ffb235;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	height: 150px;
+	border-radius: 10px;
+	color: white;
+}
+.departmentContainer :hover{
+	scale: 1.1;
+	background-color:#12396d ;
+	transition: all .4s;
+}
+.couses_main{
+	display: flex;
+	margin: auto;
+	background-color: #AC1D16;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	align-items: center;
+	max-width: 100%;
+	min-height:75vh;
+	
+}
+.course{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 90%;
+	min-height: 100%;
+	z-index: 5;
+	margin: auto;
+	overflow: hidden;
+	background-color: black;
+}
+.coursetext{
+	color: #ffffff;
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-weight: bolder;
+}
+.logintext{
+	font-size: 21px;
+	color: #AC1D16;
+	margin: 5px 0px;
+	display: block;
+	width: 100%;
+}
+
+	.inputtext{
+	display: block;
+	width: 80%;
+}
+.submitbtn{
+	margin: 15px 0px;
+	display: block;
+	font-size: 16px;
+	background-color:#12396d ;
+	color: white;
+	border: none;
+	padding: 3px 60px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.createtext span{
+	font-size: 15px;
+	color: #12396d;
+	margin: 5px 0px;
+	display: block;
+	width: 100%;
+}
+.createtext a{
+	font-weight: bold;
+	color: #AC1D16;
+	
+}
+.createtext :hover{
+	color: #12396d;
+	transition: all .3s;
+}
+.adminBar{
+	min-width: 100%;
+	min-height:40vh;
+	background-color: red;
+}
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+	z-index: 100;
+}
+.bar{
+	height:5px;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+	background-color: darkred;
+}
+
+.nav li a:hover{
+	border: 1px solid #fff;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 1s ease;
+	display: none;
+	background-color: darkred;
+}
+.icon .bar{
+	background-color: #fff;
+}
+.icon #bar1{
+	transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.icon #bar2{
+	opacity: 0;
+}
+
+.change{
+	background-color:darkred;
+	height: 100vh;
+	margin: 0;
+	position: absolute;
+	font-size:30px;
+	top: 0;
+	z-index:-100;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:center;
+}
+.navigation{
+	background-color: darkred;
+}
+.signhead{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 100vw;
+	min-height:45vh;
+	margin: 20px;
+	padding:10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 20px;	
+}
+.signtext{
+	width: 100%;
+	margin: auto;
+/*	background-color: red;*/
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+@media(max-width998px) {
+	.imgContainer{
+		display: none;
+	}
+   
+    }
+
+
+    @media(max-width:728px) {
+		.imgContainer{
+			display: none;
+		}
+    }

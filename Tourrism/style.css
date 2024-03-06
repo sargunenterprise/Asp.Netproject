@@ -1,0 +1,210 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+    transition: .5s ease-in-out;
+}
+a{
+    text-decoration:none;
+    color:none;
+}
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --XsmallText:  0.8rem;
+    --mediumText: 1.3rem;
+    --BigText: 4rem;
+    --phoneText:3rem;
+}
+.XsmallText {
+    font-size: var(--XsmallText);
+}
+.smallText{
+    font-size:var(--smallText);
+}
+.mediumText {
+    font-size: var(--mediumText);
+}
+.BigText {
+    font-size: var(--BigText);
+}
+.MainBtn{
+     background-color:var(--black);
+     color:white;
+     font-weight:400;
+     width:9rem;
+     font-size: var(--smallText);
+     border-radius:.2rem;
+     text-align:center;
+     padding:.1rem;
+
+ }
+ /****************************hero Slider*******************************/
+.slide {
+    box-shadow: 0px 25px 20px -20px rgba(0,0,0,0.45);
+}
+.heroSlide{
+    display: flex;
+}
+.HeroImage {
+    width: 100%;
+    height:100%;
+    border-radius:0.5rem;
+}
+.SlideContent{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    padding:3rem;
+    width: 50%;
+    /* background-color: red; */
+}
+.SlideContent span {
+    font-size: var(--smallText);
+    color:var(--green)
+}
+    .SlideContent h3 {
+        font-size: var(--BigText);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--black)
+    }
+    .SlideContent p {
+        font-size:var(--mediumText);
+        color: var(--light-color)
+    }
+.ImgConatier {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+/****************************Services Slide*******************************/
+.Services{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: row;
+}
+.Cardweb{
+    height:18rem;
+    overflow:hidden;
+    padding:1rem 1.5rem;
+}
+.Cardweb i {
+    color:var(--green);
+    margin-bottom:1rem;
+}
+/****************************destination Slide*******************************/
+.destination-Container{
+    height: auto;
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+}
+.destination-card img{
+   height:15rem;
+   object-fit:cover;
+   object-position:top;
+   
+}
+.destination-Content h5 {
+    background-color: var(--black);
+    color: rgb(255, 255, 255);
+    font-weight:700;
+    padding: .3rem 1rem;
+    border-radius:0.2rem;
+}
+.destination-Content p{
+margin-top: 1rem;
+}
+@media(max-width998px) {
+    html,body {
+            font-size: 75%;
+        } 
+        .MainBtn{
+            padding:.4rem .1rem;
+       
+        }
+        
+        .heroSlide{
+            flex-direction: column;
+        }
+        .SlideContent{
+          
+            width: 100%;
+        }
+        .SlideContent span {
+            font-size: var(--smallText);
+        }
+
+        .ImgConatier {
+            padding: 0rem;
+        }
+        /* .SlideContent span {
+            font-size: var(--sText);
+            color:var(--green)
+        } */
+            .SlideContent h3 {
+                font-size: var(--phoneText);
+              
+            }
+        /******************services*********************/
+        .Cardweb {
+            height: 15rem;
+           
+        }
+    /****************************Services Slide*******************************/
+    .destination-Container {
+        height: 33rem;
+    }
+    .destination-card img {
+        height: 20rem;
+    }
+   
+    }
+
+
+    @media(max-width:728px) {
+        html,body {
+            font-size: 90%;
+        } 
+        .MainBtn{
+            padding:.4rem .1rem;
+       
+        }
+       
+        .SlideContent{
+          
+            width: 100%;
+        }
+        .heroSlide{
+            flex-direction: column;
+        }
+        .ImgConatier {
+            padding: 0rem;
+        }
+        /* .SlideContent span {
+            font-size: var(--smallText);
+            color:var(--green)
+        } */
+        .SlideContent h3 {
+            font-size: var(--phoneText);
+          
+        }
+        /******************services*********************/
+        .Cardweb {
+            height: 15rem;
+        }
+       /****************************Services Slide*******************************/
+        .destination-Container {
+            height: 33rem;
+            }
+        .destination-card img {
+             height: 20rem;
+        }
+    }
