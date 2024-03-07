@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head> 
+<body>
+    <!-- navbar Starts -->
+    <nav class="navbar navbar-expand-lg bg-body-white px-4 border-bottom sticky-top bg-white Nav-shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="index.html"><i class="fa-solid fa-location-dot text-success"></i> Amritsar<span class="text-success"> Tourism</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-success fs-6" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="#aboutus">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="contactus.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn bg-success text-white" aria-current="page" href="login.html">Sign In</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--************************************** login form *****************************************-->
+
+    <section class="container card mt-5 p-3 m-auto">
+        <div class="container">
+            <h3 class="card-title txtColor fs-3 fw-semibold rounded-2 bgNavy mt-5 text-left p-2 w-100">Sign&nbsp;<span class="text-success">Up</span> </h3>
+            <hr class="Dashline m-auto " />
+        </div>
+        <div class="container m-3">
+            <form class="m-5">
+                <div class="form-group col-md-6">
+                    <label for="Mobile">Name</label>
+                    <input ID="txtMobile" runat="server" ValidationGroup="grpLogin" TextMode="name"
+                        Class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Mobile">Mobile</label>
+                    <input ID="txtMobile" runat="server" ValidationGroup="grpLogin" TextMode="Phone"
+                        Class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Mobile">User Name</label>
+                    <input ID="txtMobile" runat="server" ValidationGroup="grpLogin" TextMode="Phone"
+                        Class="form-control">
+                </div>
+                <div class="form-group  col-md-6">
+                    <label for="inputAddress2">Password</label>
+                    <input ID="txtUserPass" runat="server" ValidationGroup="grpLogin" TextMode="Password"
+                        Class="form-control">
+                    
+                </div>
+             
+
+                <div class=" d-flex">
+                    <Button ID="btnSubmit" runat="server" Text="Submit" ValidationGroup="grpLogin"
+                    Class="btn bg-success text-white fw-bold mt-3" OnClick="btnSubmit_Click" >Submit</Button><br>
+                </div>
+                <div class="mt-2">
+                  Already Have An Account&nbsp;<a href="login.html" class="text-success ">Sign In</a>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+    <!-- *************************footer************************************** -->
+    
+    <footer class="bg-dark text-white mt-3 p-5">
+        <div class="row p-3 ">
+            <div class="col-sm-6 mb-3 mb-sm-0 ">
+                <div class=" bg-dark">
+                    <ul class="navbar-nav ms-auto text-white">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Default.aspx">
+                                <i class="fa fa-home"></i>&nbsp;Home <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-info-circle"></i>&nbsp;About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-gears"></i>&nbsp;Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="frmLogin.aspx"><i class="fa fa-user"></i>&nbsp;My Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 bg-dark footerSize ">
+                <div class="  bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title text-white ">Developed by<br> SARGUN ENTERPRISES</h5>
+                        <p>
+                            Check out<br>
+                            <a href="http://sargunenterprises.com/" class="text-white">www.sargunenterprises.com</a><br>
+                            All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
